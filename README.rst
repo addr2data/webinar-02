@@ -30,3 +30,44 @@ Three goals
 Webinar-02
 ==========
 
+
+
+
+Identity and Access Management (IAM)
+------------------------------------
+
+- Create user named **webserver**
+
+- Create user named **worker**
+
+
+Simple Queue Service (SQS)
+--------------------------
+
+- Create a queue named **jobs** with the following settings:
+
+    + Visibility timeout: **15 mins**
+
+    + Delivery delay: **0 seconds**
+
+    + Receive message wait time: **20 seconds**
+
+    + Message retention period: **7 days**
+
+    + Maximum message size: **256 KB**
+
+    + Access policy
+
+        Choose method: **Basic**
+
+        Define who can send messages to the queue
+
+            Only the specified AWS accounts, IAM users and roles: 
+
+                Add **webserver**
+
+        Define who can receive messages from the queue
+
+            Only the specified AWS accounts, IAM users and roles:
+
+                Add **worker**
