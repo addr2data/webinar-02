@@ -58,15 +58,15 @@ Simple Queue Service (SQS)
 
     + Access policy
 
-        Choose method: **Basic**
+        + Choose method: **Basic**
 
-        Define who can send messages to the queue
+        + Define who can send messages to the queue
 
             Only the specified AWS accounts, IAM users and roles: 
 
                 Add **webserver**
 
-        Define who can receive messages from the queue
+        + Define who can receive messages from the queue
 
             Only the specified AWS accounts, IAM users and roles:
 
